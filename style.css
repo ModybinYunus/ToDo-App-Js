@@ -1,0 +1,135 @@
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: -webkit-linear-gradient(90deg, #7d8eec, #27ffbe);
+}
+
+h1,
+h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.header {
+  background: -webkit-linear-gradient(90deg, #27ffbe, #7d8eec);
+  padding: 50px;
+  color: white;
+  text-align: center;
+  width: 400px;
+  height: 700px;
+  border-radius: 25px;
+  margin: 40px auto;
+  font-weight: normal;
+}
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+  margin: 0;
+  font-size: 16px;
+  background-color: #fcfcfc;
+  width: 100%;
+  padding: 15px ;
+  border: none;
+  border-radius: 15px;
+}
+
+input:focus {
+  border: 2px solid #8a8be4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn-add {
+  text-align: center;
+  vertical-align: middle;
+  color: #f4f4f5;
+  background-color: #7d8eec;
+  margin: 15px;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  padding: 15px ;
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  background-color: #27ffbe;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background: -webkit-linear-gradient(60deg, #27ffbe, #7d8eec);
+  color: #fcfcfc;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 10px 10px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  user-select: none;
+  border-radius: 10px;
+}
+li:hover {
+  background: -webkit-linear-gradient(30deg, #7d8eec, #27ffbe);
+}
+li.done {
+  background: #27ffbe;
+  color: #2d49e7;
+  text-decoration: line-through;
+}
+
+li.done::before {
+  content: "";
+  position: absolute;
+  color: #2d49e7;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.deletetask {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 15px;
+  background: -webkit-linear-gradient(90deg, #dd46b0, #27ffbe);
+  text-align: center;
+  width: 0;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
+  border-radius: 15px;
+}
+.deletetask:hover {
+  background: -webkit-linear-gradient(90deg, #dd46b0, #27ffbe);
+  color: rgb(255, 255, 255);
+  width: 15px;
+  opacity: 1;
+}
+a{
+
+  color: #2d49e7;
+  text-decoration: none;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+a:hover {
+  color: #27ffbe;
+}
